@@ -1,0 +1,300 @@
+* {
+    margin: 1px;
+    padding: 1px; }
+  
+  body {
+    background-color: rgb(214, 221, 181);
+    font-family: "Open Sans", Helvetica, sans-serif;
+    color: rgba(92, 8, 8, 0.753);
+    width: 95vw;
+    display: grid;
+    grid-template-areas: "header" 
+   "main"
+   "footer";
+    grid-gap: 1px; }
+  
+  header {
+    grid-area: header; }
+  
+  .header {
+    color: rgba(92, 8, 8, 0.753);
+    font-style: italic;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    padding: 2px;
+    margin: 2px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-start; }
+  
+  .header-logo {
+    width: 100px;
+    height: auto;
+    padding: 10px 0px;
+    align-items: initial; }
+  
+  .header-slogan {
+    align-items: initial;
+    color: rgba(92, 8, 8, 0.753);
+    font-size: 18px;
+    padding: 10px 0px; }
+  
+  .navbar {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: rgba(92, 8, 8, 0.753);
+    background-color: rgb(229, 227, 192);
+    text-align: start;
+    font-size: 18px; }
+  
+  .nav-link {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none; }
+  
+  .nav-link:hover {
+    background-color: rgba(92, 8, 8, 0.753); }
+  
+  @media screen and (min-width: 768px) {
+    body {
+      display: grid;
+      grid-template-areas: "header"
+   "main"
+   "footer";
+      grid-gap: 10px;
+      margin: 10px 10px;
+      padding: 1px 1px; }
+    .header {
+      padding: 5px;
+      margin: 5px; }
+    .header-logo {
+      width: 100px;
+      height: auto;
+      align-items: initial; }
+    .header-slogan {
+      font-size: 15px; }
+    .navbar {
+      font-size: 20px;
+      padding: 0px 5px;
+      transition: all .3seg ease-in-out; } }
+  
+  @media screen and (min-width: 1024px) {
+    body {
+      display: grid;
+      grid-template-areas: "header"
+   "nav"
+   "main"
+   "footer";
+      grid-gap: 10px;
+      margin: 25px 25px;
+      padding: 2px 2px; }
+    .header {
+      padding: 10px;
+      margin: 10px; }
+    .header-logo {
+      width: 200px;
+      height: auto;
+      align-items: initial; }
+    .header-slogan {
+      font-size: 20px; }
+    .navbar {
+      font-size: 20px;
+      padding: 0px 5px;
+      transition: all .3seg ease-in-out; } }
+  
+  .carousel-caption p {
+    font-size: 14px;
+    color: rgba(92, 8, 8, 0.753); }
+  
+  .carousel-caption h5 {
+    color: rgba(92, 8, 8, 0.753); }
+  
+  .carousel-slide img {
+    height: 50px; }
+  
+  .carousel-item img {
+    height: 50px; }
+  
+  main {
+    grid-area: main;
+    margin: 1px;
+    padding: 1px; }
+  
+  .image {
+    width: 200px;
+    position: left; }
+  
+  .text {
+    color: black;
+    font-style: italic;
+    font-size: 18px; }
+  
+  .text2 {
+    color: black;
+    font-style: italic;
+    font-size: 14px; }
+  
+  .foot {
+    display: flex; }
+  
+  .foot-1 {
+    align-items: baseline; }
+  
+  .maps {
+    width: 150px;
+    height: 100px; }
+  
+  .redes {
+    width: 20px;
+    height: 20px; }
+  
+  footer {
+    background-color: rgb(229, 227, 192);
+    padding: 0px;
+    border: inset;
+    color: black;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+    color: rgba(92, 8, 8, 0.753);
+    grid-area: footer; }
+  
+  .contact {
+    height: 300px;
+    width: 200px; }
+  
+  .contact-form {
+    background-color: rgb(229, 227, 192);
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between; }
+  
+  .enviar {
+    width: 100px; }
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .carousel-slide img {
+      height: 200px; }
+    .carousel-item img {
+      height: 150px; }
+    .carousel-caption p {
+      font-size: 21px;
+      color: rgba(92, 8, 8, 0.753); }
+    .carousel-caption h5 {
+      color: rgba(92, 8, 8, 0.753); }
+    .image {
+      width: 200px;
+      position: left; }
+    .text {
+      color: black;
+      font-style: italic;
+      font-size: 25px; }
+    .text2 {
+      color: black;
+      font-style: italic;
+      font: size 21px; }
+    .maps {
+      width: 250px;
+      height: 200px; }
+    .redes {
+      width: 30px;
+      height: 30px; }
+    .contact {
+      height: 300px;
+      width: 400px; }
+    .contact-form {
+        background-color: rgb(229, 227, 192);
+      font-size: 17px; } }
+  
+  @media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .carousel-slide img {
+      height: 450px; }
+    .carousel-item img {
+      height: 450px; }
+    .carousel-caption p {
+      font-size: 26px; }
+    .image {
+      width: 300px;
+      position: left; }
+    .text {
+      color: black;
+      font-style: italic;
+      font-size: 30px; }
+    .text2 {
+      color: black;
+      font-style: italic;
+      font: size 26px; }
+    .maps {
+      width: 400px;
+      height: 300px; }
+    .redes {
+      width: 40px;
+      height: 40px; }
+    .contact {
+      height: 300px;
+      width: 500px; }
+    .contact-form {
+      background-color: beige;
+      font-size: 20px; } }
+  
+  .card-father {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  
+  .card {
+    background-color: rgb(229, 227, 192);
+    width: 124px;
+    height: auto;
+    justify-content: space-between; }
+  
+  .card-img-top {
+    width: 110px;
+    height: 110px;
+    align-items: center;
+    margin: none;
+    padding: none; }
+  
+  .card-body h5 {
+    font-size: 18px; }
+  
+  .card-body p {
+    font-size: 14px; }
+  
+  .btn {
+    font-size: 14px; }
+  
+  @media screen and (min-width: 768px) {
+    .card {
+      width: 210px;
+      height: auto; }
+    .card-img-top {
+      width: 200px;
+      height: 200px;
+      margin: none;
+      padding: none; }
+    .card-body h5 {
+      font-size: 25px; }
+    .card-body p {
+      font-size: 21px; }
+    .btn {
+      font-size: 21px; } }
+  
+  @media screen and (min-width: 1024px) {
+    .card {
+      width: 300px;
+      height: auto; }
+    .card-img-top {
+      width: 290px;
+      height: 290px;
+      margin: none;
+      padding: none; }
+    .card-body h5 {
+      font-size: 30px; }
+    .card-body p {
+      font-size: 26px; }
+    .btn {
+      font-size: 26px; } }
+  
